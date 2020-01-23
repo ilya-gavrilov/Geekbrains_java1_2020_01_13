@@ -40,7 +40,7 @@ public class Task1 {
             if (x == 1) {
                 attempt = " попытка!";
             }
-            if (i == 2) {
+            if (i == 2 && numberTry != randomNum) {
                 System.out.println("YOU LOSE... ;( \n" + "Было загадано число: " + randomNum );
                 break;
             }
