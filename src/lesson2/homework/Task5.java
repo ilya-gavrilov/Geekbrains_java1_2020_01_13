@@ -1,6 +1,7 @@
 package lesson2.homework;
 /*
-Test pull request.
+Задать одномерный массив и найти в нем минимальный и максимальный элементы (без
+помощи интернета);
  */
 
 public class Task5 {
