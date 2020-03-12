@@ -1,6 +1,8 @@
 package lesson5.homework;
 
 
+import java.util.Arrays;
+
 public class Employee {
     private String name;
     private String position;
@@ -22,6 +24,20 @@ public class Employee {
         System.out.println("ФИО: " + name + "; Должность: " + position + "; Email: " + "; Телефон: " + phoneNumber + "; Зарплата: " + salary + "; Возраст: " + age + ".");
     }
 
+    public static void employeesInfo(Employee[] employees) {
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println(employees[i]);
+        }
+    }
+
+    public static void employeesOver40 (Employee[] employees) {
+        for (int i = 0; i < employees.length; i++) {
+            if (employees[i].age > 40) {
+                System.out.println("Over 40 " + employees[i]);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Employee employee = new Employee("Уткин Василий Петрович", "Сантехник", "отсутствует", "333-22-55", 14500, 71);
 
@@ -33,6 +49,21 @@ public class Employee {
         employeesArray[4] = new Employee("Петров Пётр", "CEO", "pp@mail.ru", "567-89-01", 100000, 53);
 
         employee.employeeInfo();
+        System.out.println("-------------------------------------------------------------------------------------");
+        employeesInfo(employeesArray);
+        System.out.println("-------------------------------------------------------------------------------------");
+        employeesOver40(employeesArray);
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                '}';
+    }
 }
