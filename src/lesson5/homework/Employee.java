@@ -1,8 +1,5 @@
 package lesson5.homework;
 
-
-import java.util.Arrays;
-
 public class Employee {
     private String name;
     private String position;
