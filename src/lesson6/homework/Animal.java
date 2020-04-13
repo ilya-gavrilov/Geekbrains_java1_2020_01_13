@@ -2,11 +2,11 @@ package lesson6.homework;
 
 public abstract class Animal {
 
-    String name;
-    String color;
-    int age;
-    int swimmingRange;
-    int runningRange;
+    protected String name;
+    protected String color;
+    protected int age;
+    protected int swimmingRange;
+    protected int runningRange;
 
     public abstract void run(int runDistance);
     public abstract void swim(int swimDistance);
